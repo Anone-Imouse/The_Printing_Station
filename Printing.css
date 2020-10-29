@@ -1,0 +1,47 @@
+body {
+  margin:0;
+  padding:0;
+  font-family:"Varela Round",sans-serif;
+  display:flex;
+  height:100vh;
+  align-items: center;
+  justify-content:center;
+  perspective:500px;
+} .content {
+  font-weight:900;
+  font-size:50px;
+  text-align:center;
+} .btn {
+  background-color:lime;
+  color:white;
+  margin:10px;
+  border-radius:50px;
+  cursor:pointer;
+  transition: all 0.7s ease;
+  animation:hiv 5s infinite linear, spin 2s 3 linear 20s forwards;
+}
+.btn:hover {
+  animation-play-state:paused;
+  transform:scale(1.2);
+}
+@keyframes hiv {
+  0% {
+   background-color:lime; 
+  }
+  33% {
+    background-color:springgreen;
+  }
+  66% {
+   background-color:cyan;
+  }
+  90% {
+    background-color:springgreen
+  }
+  100% {
+    background-color:lime;
+  }
+} @keyframes spin {
+  0% {
+    transform: rotateX(360deg);
+  }
+}
